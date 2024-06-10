@@ -6,7 +6,7 @@ async function create(userData) {
     const userFound = await Users.findOne({email: userData.email})
     
     if(userFound){
-        throw createError(409, "Email is already is use")
+        throw createError(409, "Email is already in use")
     }
 
     userData.password = await encrypt.encrypt(userData.password)
@@ -16,12 +16,12 @@ async function create(userData) {
 } 
 
 async function getAll() {
-    const allPosts = await Users.find().populate("post")
+    const allPosts = await Users.find()
     return allPosts
 }
 
 async function getById(id) {
-    const user = await Users.findById(id).populate("post")
+    const user = await Users.findById(id)
     return user
 }
 
