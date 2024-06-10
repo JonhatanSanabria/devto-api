@@ -2,10 +2,8 @@ const createError = require("http-errors")
 const Post = require("../models/post.model")
 
 async function create(post) {
-    const existingPost = await Post.findOne({
-        number: post.number,
-        tag: post.tag
-    })
+    const existingPost = await Post.findOne({title: post.title})
+    
     if(existingPost){
         throw createError(409, "Post already exists")
     }

@@ -17,8 +17,8 @@ const schema = new mongoose.Schema({
         minLength: 1
     },
     user: {
-        type: String,
-        required: true
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "_id"
     },
     tags: {
         type: String,

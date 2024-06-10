@@ -11,7 +11,7 @@ router.post("/", auth, async (req, res) => {
         const postCreated = await postUsecase.create(post)
         res.json({
             success: true,
-            message: "post created",
+            message: "Post created",
             data: {post: postCreated}
         })
     } catch (error) {
@@ -44,7 +44,7 @@ router.patch("/:id", auth, async (req, res) => {
         const postUpdated = await postUsecase.updateById(id, req.body)
         res.json({
             success: true,
-            message: "post updated",
+            message: "Post updated",
             data: {post: postUpdated}
         })
     } catch (error) {
@@ -61,7 +61,7 @@ router.delete("/:id", auth, async (req, res) => {
         const postDeleted = await postUsecase.deleteById(id)
         res.json({
             success: true,
-            message: "post deleted",
+            message: "Post deleted",
             data: {post: postDeleted}
         })
     } catch (error) {
