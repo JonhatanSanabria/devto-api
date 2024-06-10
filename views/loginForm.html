@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous"/>
+    <title>Log in Form</title>
+</head>
+<body>
+    <header>
+        
+        <nav class="navbar navbar-expand-lg navbar__container--white"><!--log in & create account buttons-->
+            <div class="container">
+                <div class="d-flex justify-content-start align-items-center">
+                    <a class="navbar-brand" href="logo">
+                        <img 
+                        width="55px" class="img-fluid navbar__logo"
+                        src="https://dev-to-uploads.s3.amazonaws.com/uploads/logos/resized_logo_UQww2soKuUsjaOGNB38o.png"
+                        alt="Logo DevTo"/>
+                    </a>
+                    <form class="d-flex justify-content-start navbar__search-container d-none d-sm-none d-md-block" role="search">
+                        <div class="input-group">
+                          <input class="form-control rounded" type="text" placeholder="Search..."/>
+                          <button class="btn rounded-left button__search" type="button"><!--glass icon-->
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              aria-hidden="true"
+                              class="crayons-icon c-btn__icon"
+                              focusable="false"
+                            >
+                              <path
+                                d="m18.031 16.617 4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0 1 11 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 0 1-1.969 5.617zm-2.006-.742A6.977 6.977 0 0 0 18 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 0 0 4.875-1.975l.15-.15z"
+                              ></path>
+                            </svg>
+                          </button>
+                        </div>
+                      </form>
+                </div>
+                    <div class="d-flex container-right align-items-center">
+                        <button class="btn btn-outline-primary" type="button">login</button>
+                        <button class="btn btn-outline-primary" type="button">Create account</button>
+                    </div>
+            </div>
+        </nav>
+
+    </header>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 offset-md-3">
+                    <!-- <nav id="nav-create"></nav> -->
+                    <form id= "login-form">
+                        <div class="d-grid gap-2 ">
+                            <h3 class="text-center mb-0">Welcome to DEV Comunity</h1>
+                            <p class="text-center mt-0">DEV Community is a community of 1,109,797 amazing developers</p>
+                            <button class="btn btn-dark mt-1 fs-5" type="button"> Continue with Apple</button>
+                            <button class="btn btn-success mt-1 fs-5" type="button">Continue with Forem</button>
+                            <button class="btn btn-secondary mt-1 fs-5" type="button">
+                                <a href="#" class="me-2 social-media__link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-labelledby="ang9e747fvanhj8q2z319da3q7etk69b" class="crayons-icon c-link__icon"><title id="ang9e747fvanhj8q2z319da3q7etk69b">Github</title>
+                                        <path d="M12 2C6.475 2 2 6.475 2 12a9.994 9.994 0 006.838 9.488c.5.087.687-.213.687-.476 0-.237-.013-1.024-.013-1.862-2.512.463-3.162-.612-3.362-1.175-.113-.288-.6-1.175-1.025-1.413-.35-.187-.85-.65-.013-.662.788-.013 1.35.725 1.538 1.025.9 1.512 2.338 1.087 2.912.825.088-.65.35-1.087.638-1.337-2.225-.25-4.55-1.113-4.55-4.938 0-1.088.387-1.987 1.025-2.688-.1-.25-.45-1.275.1-2.65 0 0 .837-.262 2.75 1.026a9.28 9.28 0 012.5-.338c.85 0 1.7.112 2.5.337 1.912-1.3 2.75-1.024 2.75-1.024.55 1.375.2 2.4.1 2.65.637.7 1.025 1.587 1.025 2.687 0 3.838-2.337 4.688-4.562 4.938.362.312.675.912.675 1.85 0 1.337-.013 2.412-.013 2.75 0 .262.188.574.688.474A10.016 10.016 0 0022 12c0-5.525-4.475-10-10-10z"></path>
+                                    </svg>
+                                </a>
+                                Continue with GitHub
+                            </button>
+                            <button class="btn btn-primary mt-1 fs-5" type="button">Continue with Twitter</button>
+                            <p class="text-center"> Have a password? Continue with your email address</p>
+                        </div>
+
+                        <div class="mb-3">                            
+                          <label for="" class="form-label">Email</label>
+                          <input type="email" class="form-control" name ="email">
+                        </div>
+
+                        <div class="mb-3">
+                          <label for="" class="form-label">Password</label>
+                          <input type="password" class="form-control" name="password">
+                        </div>
+
+                        <div class="d-grid gap-2">
+                          <button id="login-button" class="btn btn-primary mt-1 fs-5 " type="button">Continue</button>
+                        </div>
+                        
+                      </form>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer__container p-5 mt-4">
+            <div class="container text-center">
+              <p><a href="#">DEV Community</a> -- A constructive and inclusive social network for software developers. With you every step of your journey.</p>
+              <ul class="d-flex justify-content-center flex-wrap">
+                <li class="list-unstyled me-4"><a class="text-decoration-none" href="">Home</a></li>
+                <li class="me-4"><a class="text-decoration-none" href="">Listings</a></li>
+                <li class="me-4"><a class="text-decoration-none" href="">Podcasts</a></li>
+                <li class="me-4"><a class="text-decoration-none" href="">Videos</a></li>
+                <li class="me-4"><a class="text-decoration-none" href="">Tags</a></li>
+                <li class="me-4"><a class="text-decoration-none" href="">FAQ</a></li>
+                <li class="me-4"><a class="text-decoration-none" href="">Forem Shop</a></li>
+                <li class="me-4"><a class="text-decoration-none" href="">Sponsors</a></li>
+                <li class="me-4"><a class="text-decoration-none" href="">About</a></li>
+                <li class="me-4"><a class="text-decoration-none" href="">Contact</a></li>
+                <li class="me-4"><a class="text-decoration-none" href="">Guides</a></li>
+                <li class="me-4"><a class="text-decoration-none" href="">Software comparisons</a></li>
+              </ul>
+              <ul class="d-flex justify-content-center">
+                <li class="list-unstyled me-4"><a class="text-decoration-none" href="">Code of Conduct</a></li>
+                <li class="me-4"><a class="text-decoration-none" href="">Privacy Policy</a></li>
+                <li class="me-4"><a class="text-decoration-none" href="">terms of use</a></li>
+              </ul>
+              <p class="m-0">Built on <a class="text-decoration-none" href="#">Forem</a> — the <a class="text-decoration-none" href="#">open source</a> software that powers <a href="#" class="text-decoration-none">DEV</a> and other inclusive communities.</p>
+              <p class="m-0">Made with love and <a href="#" class="text-decoration-none">Ruby on Rails</a>. DEV Community © 2016 - 2023.</p>
+            </div>
+          </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="../js/loginForm.js" type="module"></script>
+</body>
+</html> 

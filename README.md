@@ -22,3 +22,5 @@ npm run dev
 4. to run in production mode
 npm start
 ---
+Esta aplicacion permite registrar usuarios con su respectivo e irrepetible numero de id y hacer peticiones de un post
+Cuenta con autorizacion por token, por lo que hay que estar registrado para poder publicar, borrar o actualizar un post
